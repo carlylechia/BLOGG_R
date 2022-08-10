@@ -8029,7 +8029,7 @@
     "tapable" "^1.0.0"
     "webpack-sources" "^1.0.0"
 
-"webpack-cli@^3.3.12":
+"webpack-cli@^3", "webpack-cli@^3.3.12":
   "integrity" "sha512-NVWBaz9k839ZH/sinurM+HcDvJOTXwSjYp1ku+5XKeOC03z8v5QitnK/x+lAxGXFyhdayoIf/GOpv85z3/xPag=="
   "resolved" "https://registry.npmjs.org/webpack-cli/-/webpack-cli-3.3.12.tgz"
   "version" "3.3.12"
