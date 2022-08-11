@@ -1,24 +1,53 @@
-# README
+# BLOG_R APP
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This website hosts a blog application built with Ruby on Rails. Blog_R will show the list of posts and empower readers to interact with them by adding comments and likes. Do well to check it out, and leave a star on this repo, if you like what you see.
 
-Things you may want to cover:
+## Built with
+- Ruby
+- Rails (RoR)
+- Rubocop
+- Stylelint
 
-* Ruby version
+## SetUp
+To get a local copy up and running, follow these steps:
 
-* System dependencies
+* You should have ***Ruby*** installed on your computer.
+* You should also have ***Rails*** installed on your computer.
+* Clone this repository into your computer by running the following command in your terminal:
+```
+git clone https://github.com/carlylechia/BLOGG_R.git
+```
+* Run this command in the cloned directory, to install required gems: 
+```
+bundle install
+```
+- Run `Rubocop -A` and fix linters errors, if any.
+* Run the project in your browser:
+```
+rails s
+```
 
-* Configuration
+## Authors
 
-* Database creation
+👤 **Chia Carlyle**
+- GitHub: [@carlylechia](https://github.com/carlylechia)
+- Twitter: [@chiacarlyle](https://twitter.com/chiacarlyle)
+- LinkedIn: [chia-carlyle](https://linkedin.com/in/chia-carlyle)
 
-* Database initialization
+## 🤝 Contributing
 
-* How to run the test suite
+Contributions, issues, and feature requests are welcome!
 
-* Services (job queues, cache servers, search engines, etc.)
+Feel free to check the [issues page](../../issues/).
 
-* Deployment instructions
+## Show your support
 
-* ...
+Give a ⭐️ if you like this project!
+
+## Acknowledgments
+
+- Hat tip to Microverse
+
+## 📝 License
+
+This project is [MIT](./MIT.md) licensed.
