@@ -22,7 +22,7 @@ gem 'jbuilder', '~> 2.7'
 # Use Active Model has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 gem 'net-smtp'
-gem 'rspec-rails', '~> 4.0.0.beta2'
+# gem 'rspec-rails', '~> 4.0.0.beta2'
 
 # Use Active Storage variant
 # gem 'image_processing', '~> 1.2'
@@ -30,10 +30,10 @@ gem 'rspec-rails', '~> 4.0.0.beta2'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
 
-# group :development, :test do
-#   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
-#   gem 'rspec-rails'
-# end
+group :development, :test do
+  # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
+  gem 'rspec-rails'
+end
 
 group :development do
   # Access an interactive console on exception pages or by calling 'console' anywhere in the code.
