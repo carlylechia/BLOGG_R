@@ -22,6 +22,10 @@ git clone https://github.com/carlylechia/BLOGG_R.git
 bundle install
 ```
 - Run `Rubocop -A` and fix linters errors, if any.
+* You can run unit tests and make sure they are passing, with this command:
+```
+rspec
+```
 * Run the project in your browser:
 ```
 rails s
