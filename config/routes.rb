@@ -5,4 +5,5 @@ Rails.application.routes.draw do
 
   get '/', to: 'pages#index'
   get '/users', to: 'users#index'
+  get '/users/:id', to: 'users#show'
 end
