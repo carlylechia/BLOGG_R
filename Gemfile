@@ -32,6 +32,7 @@ gem 'bootsnap', '>= 1.4.4', require: false
 
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
+  gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
 
