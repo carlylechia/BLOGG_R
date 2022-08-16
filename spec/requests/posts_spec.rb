@@ -15,4 +15,18 @@ RSpec.describe 'PostsController', type: :request do
       expect(response.body).to include 'Posts'
     end
   end
+  describe 'GET #show' do
+    before(:each) { get '/users/1/posts/1' }
+    it 'returns status 200 Ok for /users/1/posts/1' do
+      expect(response).to have_http_status :success
+    end
+
+    it 'returns posts/show view for posts/show action' do
+      expect(response).to render_template :show
+    end
+
+    it 'returns posts/show view that includes post keyword' do
+      expect(response.body).to include 'Post'
+    end
+  end
 end
