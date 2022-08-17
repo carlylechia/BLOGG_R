@@ -1,1 +1,14 @@
-<h1>Post with id <%= @post_id %></h1>
+<div class="post_info">
+    <div class="post_head">
+        <section>
+            <h3>
+                <%= @post.title %>
+                <span> by <%= @post.user.name %></span>
+            </h3>
+            <p><%= @post.comments_count %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</p>
+        </section>
+        <p class="post_body"><%= @post.text %></p>
+
+    </div>
+    
+</div>
