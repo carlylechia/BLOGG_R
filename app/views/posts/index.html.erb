@@ -1,1 +1,20 @@
-<h1>Your Blogg Posts will appear here!</h1>
+<div class="user_details">
+    <%= render 'shared/user_details'%>
+</div>
+<div class="post_info">
+    <% @posts.each do |post|%>
+            <div class="post_head">
+                <h3><%= link_to post.title, user_post_path(@user.id, post) %></h3>
+                <p class="post_body"><%= post.text %></p>
+                <div class="comment_info">
+                    <% if post.comments.empty? %>
+                        <p>0 comment</p>
+                    <% else %>
+                        <% post.comments.limit(3).each do |comment| %>
+                            <p>~> <%= comment.text %> <span>by: <%= comment.user.name %><span></p>
+                        <% end %>
+                    <% end %>
+                </div>
+            </div>      
+    <% end %>
+</div>
