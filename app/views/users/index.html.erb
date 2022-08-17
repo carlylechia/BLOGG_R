@@ -3,7 +3,7 @@
     <% @users.each do |user| %>
         <div class="user_info">
             <div>
-                <h1><%= link_to user.name, user %></h1>
+                <strong><%= link_to user.name, user %></strong>
                 <span>Number of posts: </span>
                   <% if !user.posts_count %>
                     <span><%= 0 %></span>
