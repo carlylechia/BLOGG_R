@@ -5,12 +5,12 @@
         <p><%= @user.bio %></p>
     </section>
     <section class="posts">
-        <% @user.posts.each_with_index do |post, index| %>
+        <% @user.last_three_posts.each_with_index do |post, index| %>
             <div class="post_info">
                 <h3>Post#<%=index + 1%>: <%= post.title %></h3>
                 <p><%= post.text %></p>
             </div>
         <% end %>
     </section>
-    <%=link_to "See all users", users_path(@user)%>
+    <button><%=link_to "See all posts", user_posts_path(@user)%></button>
 </div>
