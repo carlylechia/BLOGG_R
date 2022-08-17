@@ -1,1 +1,16 @@
 <h1>All users page</h1>
+<div>
+    <% @users.each do |user| %>
+        <div class="user_info">
+            <div>
+                <h1><%= link_to user.name, user %></h1>
+                <span>Number of posts: </span>
+                  <% if !user.posts_count %>
+                    <span><%= 0 %></span>
+                    <% else %>
+                    <span><%= user.posts_count %><span>
+                  <% end %>
+            </div>
+        </div>
+    <% end %>
+</div>
