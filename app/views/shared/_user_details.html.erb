@@ -1,0 +1,10 @@
+<section class="top">
+    <div>
+        <strong><%= @user.name %></strong>
+        <span>Number of posts: </span>
+          <% if !@user.posts_count %>
+            <span><%= 0 %></span>
+            <% else %>
+            <span><%= @user.posts_count %><span>
+          <% end %>    </div>
+</section>
