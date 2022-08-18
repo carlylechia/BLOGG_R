@@ -4,5 +4,7 @@
     </div>
     <div class="contents">
         <h3><%= @user.name %></h3>
-        <span>Number of posts: <%= @user.posts_count ? @user.posts_count : 0 %></span>          
+        <span>Number of posts: <%= @user.posts_count ? @user.posts_count : 0 %></span>
 </section>
+
+<h2><%= link_to "Add post", new_post_path%></h2>
