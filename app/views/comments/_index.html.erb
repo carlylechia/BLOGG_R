@@ -2,8 +2,8 @@
     <% if post.comments.empty? %>
         <p>0 comment</p>
     <% else %>
-        <% post.last_five_comments.each do |comment| %>
-            <p>~> <%= comment.text %> <span>by: <%= comment.user.name %><span></p>
+        <% post.comments.each do |comment| %>
+            <p>~><span><%= comment.user.name %></span>: <%= comment.text %> </p>
         <% end %>
     <% end %>
 </div>

@@ -1,14 +1,18 @@
-<div class="post_info">
-    <div class="post_head">
-        <section>
-            <h3>
+<div class="post_data">
+            
+            <div class="post_head">
+              <section> 
+              <h3>         
                 <%= @post.title %>
                 <span> by <%= @post.user.name %></span>
-            </h3>
-            <p><%= @post.comments_count %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</p>
-        </section>
+              </h3>
+            
+            <div class="numbers">
+              <span><%= @post.comments_count %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</span>
+            </div>
+            </section>
+            </div>
         <p class="post_body"><%= @post.text %></p>
         <%= render partial: 'comments/index', locals: { post: @post }%>
-    </div>
     
 </div>
