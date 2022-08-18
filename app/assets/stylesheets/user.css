@@ -92,7 +92,7 @@ h1 {
   justify-content: space-between;
 }
 
-.post_info .numbers {
+.numbers {
   font-size: 12px;
   color: gray;
   display: flex;
