@@ -6,10 +6,21 @@
     </section>
     <section class="posts">
         <% @user.last_three_posts.each_with_index do |post, index| %>
-            <div class="post_info">
+          <div class="post_info">
+            <div>
                 <h3>Post#<%=index + 1%>: <%= post.title %></h3>
                 <p><%= post.text %></p>
             </div>
+            <div class="numbers">
+              <span>
+                comments: <%= @user.comments_count ? @user.comments_count : 0 %>
+              </span>
+              <span>
+                likes: <%= @user.likes_count ? @user.likes_count : 0 %>
+              </span>
+            </div>
+          </div>
+
         <% end %>
     </section>
     <button><%=link_to "See all posts", user_posts_path(@user)%></button>

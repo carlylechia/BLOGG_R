@@ -17,12 +17,6 @@ h1 {
   margin: 2rem 0;
 }
 
-.user_info h3 {
-  font-size: 1.5rem;
-  color: azure;
-  margin: 0;
-}
-
 .user_info .img {
   border: 2px solid gray;
   border-radius: 0;
@@ -38,6 +32,17 @@ h1 {
   justify-content: space-between;
   align-items: center;
   border: 2px solid gray;
+}
+
+.contents h3 {
+  font-size: 2rem;
+  color: aliceblue;
+  margin: 0;
+}
+
+.contents span {
+  font-size: 13px;
+  color: aquamarine;
 }
 
 .user_details {
@@ -82,13 +87,27 @@ h1 {
 .post_info {
   border: 0.5px solid gray;
   width: 80%;
-  padding: 2rem;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post_info .numbers {
+  font-size: 12px;
+  color: gray;
+  display: flex;
+  align-items: flex-end;
+  gap: 0.5rem;
 }
 
 .user_details button {
   background-color: goldenrod;
   border: none;
-  border-radius: 10%;
-  color: azure;
-  padding: 5px 10px;
+  padding: 0.5rem 2rem;
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
+
+.user_details button a {
+  color: aliceblue;
 }

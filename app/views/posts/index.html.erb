@@ -1,7 +1,7 @@
 <div class="user_details">
     <%= render 'shared/user_details'%>
 </div>
-<div class="post_info">
+<div class="post_data">
     <% @posts.each do |post|%>
             <div class="post_head">
                 <h3><%= link_to post.title, user_post_path(@user.id, post) %></h3>
