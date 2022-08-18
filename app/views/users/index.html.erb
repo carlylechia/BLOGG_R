@@ -1,1 +1,14 @@
-<h1>All users page</h1>
+<h1>All Blogg_Rs</h1>
+<div>
+    <% @users.each do |user| %>
+        <div class="user_info">
+            <div class="img">
+              <%= image_tag user.photo, size: "160x90", alt: "Edit Entry"%>
+            </div>
+            <div class="contents">
+                <h3><%= link_to user.name, user %></h3>
+                <span>Number of posts: <%= user.posts_count ? user.posts_count : 0 %></span>
+            </div>
+        </div>
+    <% end %>
+</div>

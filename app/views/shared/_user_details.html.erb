@@ -1,0 +1,8 @@
+<section class="user_info">
+    <div class="img">
+      <%= image_tag @user.photo, size: "160x90", alt: "Edit Entry"%>
+    </div>
+    <div class="contents">
+        <h3><%= @user.name %></h3>
+        <span>Number of posts: <%= @user.posts_count ? @user.posts_count : 0 %></span>          
+</section>

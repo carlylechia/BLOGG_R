@@ -1,0 +1,9 @@
+<div id="comments_area" class="comment_info">
+    <% if post.comments.empty? %>
+        <p>0 comment</p>
+    <% else %>
+        <% post.comments.each do |comment| %>
+            <p>~><span><%= comment.user.name %></span>: <%= comment.text %> </p>
+        <% end %>
+    <% end %>
+</div>

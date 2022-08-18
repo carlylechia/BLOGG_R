@@ -1,1 +1,27 @@
-<h1>Show user with id <%= @user_id %> </h1>
+<div class="user_details">
+ <%= render 'shared/user_details'%>
+    <section class="bio">
+        <h3>Bio</h3>
+        <p><%= @user.bio %></p>
+    </section>
+    <section class="posts">
+        <% @user.last_three_posts.each_with_index do |post, index| %>
+          <div class="post_info">
+            <div>
+                <h3>Post#<%=index + 1%>: <%= post.title %></h3>
+                <p><%= post.text %></p>
+            </div>
+            <div class="numbers">
+              <span>
+                comments: <%= @user.comments_count ? @user.comments_count : 0 %>
+              </span>
+              <span>
+                likes: <%= @user.likes_count ? @user.likes_count : 0 %>
+              </span>
+            </div>
+          </div>
+
+        <% end %>
+    </section>
+    <button><%=link_to "See all posts", user_posts_path(@user)%></button>
+</div>
