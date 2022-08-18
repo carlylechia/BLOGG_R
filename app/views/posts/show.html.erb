@@ -8,7 +8,7 @@
               </h3>
             
             <div class="numbers">
-              <span><%= @post.comments_count %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</span>
+              <span><%= @post.comments_count ? @post.comments_count : 0 %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</span>
             </div>
             </section>
             </div>
