@@ -1,0 +1,6 @@
+ <%= form_with(model:[post, comment]) do |form|%>
+     <div>
+        <%= form.text_area :text, placeholder:"Add comment"%>
+    </div>
+    <%= form.submit "Submit new comments"%>
+<% end %>
