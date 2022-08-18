@@ -84,6 +84,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 7rem;
 }
 
 .add_form form {
@@ -99,7 +100,8 @@ textarea {
 
 input[type="submit"] {
   cursor: pointer;
-  background-color: #fa807228;
+  background-color: greenyellow;
+  color: gray;
   padding: 10px;
   border: none;
   align-self: flex-start;
