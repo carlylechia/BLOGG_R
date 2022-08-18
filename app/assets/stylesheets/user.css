@@ -1,0 +1,30 @@
+a {
+  text-decoration: none;
+}
+
+h1 {
+  text-align: center;
+}
+
+.user_info {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  padding: 10px 70px;
+}
+
+.user_info h3 {
+  font-size: 1.5rem;
+  color: azure;
+  margin: 0;
+}
+
+.contents {
+  width: 80%;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid gray;
+}
