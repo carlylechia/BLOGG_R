@@ -2,8 +2,9 @@
 <div>
     <% @users.each do |user| %>
         <div class="user_info">
-            <%# <%= image_tag user.photo, size: "160x90", alt: "Edit Entry"%> %>
-            <img src="../../assets/images/image.jpeg">
+            <div class="img">
+              <%= image_tag user.photo, size: "160x90", alt: "Edit Entry"%>
+            </div>
             <div class="contents">
                 <h3><%= link_to user.name, user %></h3>
                 <span>Number of posts: <%= user.posts_count ? user.posts_count : 0 %></span>
