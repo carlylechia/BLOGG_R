@@ -13,6 +13,9 @@
     </section>
   </div>
   <p class="post_body"><%= @post.text %></p>
+  <div class="like_post">
+    <%= render partial: 'likes/form', locals: {likes: @post.likes.build, post: @post} %>
+  </div>
   <%= render partial: 'comments/index', locals: { post: @post }%>
   <div class="comments_form">
     <%= render partial: 'comments/form', locals: {comment: @post.comments.build, post: @post} %>
