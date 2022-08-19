@@ -5,6 +5,10 @@ Rails.application.routes.draw do
 
   get '/', to: 'users#index'
   resources 'users', only: %w[index show] do
-    resources 'posts', only: %w[index show]
+    resources 'posts', only: %w[index show new create]
+  end
+  resources :posts, only: [:new, :create] do
+    resources :comments
+    resources :likes
   end
 end

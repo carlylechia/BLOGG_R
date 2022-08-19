@@ -96,6 +96,7 @@ h1 {
   font-size: 12px;
   color: gray;
   display: flex;
+  justify-content: flex-end;
   align-items: flex-end;
   gap: 0.5rem;
 }

@@ -1,18 +1,23 @@
 <div class="post_data">
             
-            <div class="post_head">
-              <section> 
-              <h3>         
-                <%= @post.title %>
-                <span> by <%= @post.user.name %></span>
-              </h3>
-            
-            <div class="numbers">
-              <span><%= @post.comments_count %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</span>
-            </div>
-            </section>
-            </div>
-        <p class="post_body"><%= @post.text %></p>
-        <%= render partial: 'comments/index', locals: { post: @post }%>
+  <div class="post_head">
+    <section> 
+      <h3>         
+        <%= @post.title %>
+        <span> by <%= @post.user.name %></span>
+      </h3>
     
+      <div class="numbers">
+        <span><%= @post.comments_count ? @post.comments_count : 0 %> comments | <%= @post.likes_count ? @post.likes_count : 0 %> likes</span>
+      </div>
+    </section>
+  </div>
+  <p class="post_body"><%= @post.text %></p>
+  <div class="like_post">
+    <%= render partial: 'likes/form', locals: {likes: @post.likes.build, post: @post} %>
+  </div>
+  <%= render partial: 'comments/index', locals: { post: @post }%>
+  <div class="comments_form">
+    <%= render partial: 'comments/form', locals: {comment: @post.comments.build, post: @post} %>
+  </div>
 </div>

@@ -10,6 +10,7 @@
 .post_head {
   position: relative;
   border: 0.5px solid #fa807228;
+  word-break: break-all;
 }
 
 .comment_info span {
@@ -48,6 +49,7 @@
   padding: 5px;
   margin-bottom: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -84,6 +86,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  margin-top: 7rem;
 }
 
 .add_form form {
@@ -99,7 +102,8 @@ textarea {
 
 input[type="submit"] {
   cursor: pointer;
-  background-color: #fa807228;
+  background-color: greenyellow;
+  color: gray;
   padding: 10px;
   border: none;
   align-self: flex-start;
