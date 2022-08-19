@@ -10,6 +10,7 @@
 .post_head {
   position: relative;
   border: 0.5px solid #fa807228;
+  word-break: break-all;
 }
 
 .comment_info span {
