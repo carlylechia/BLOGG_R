@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
 ruby '3.1.2'
-
+gem 'faker', git: 'https://github.com/faker-ruby/faker.git', branch: 'master'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails', branch: 'main'
 gem 'rails', '~> 6.1.6', '>= 6.1.6.1'
 # Use postgresql as the database for Active Record
@@ -29,6 +29,10 @@ gem 'net-smtp'
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.4', require: false
+gem 'unsplash'
+# Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
+gem 'font-awesome-sass', '~> 6.1.2'
+gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console

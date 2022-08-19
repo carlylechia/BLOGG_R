@@ -49,6 +49,7 @@
   padding: 5px;
   margin-bottom: 15px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
