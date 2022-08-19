@@ -5,10 +5,10 @@ class CommentsController < ApplicationController
     @comment.user_id = current_user.id
     respond_to do |format|
       if @comment.save
-        format.js { render :index }
-        flash[:success] = 'Comment created successfully!'
+        format.html { redirect_to user_post_path(current_user, @post) }
+        flash[:success] = 'Comment created successfully'
       else
-        flash.now[:error] = 'Error: Failed to save comment, please try again.'
+        flash[:error] = 'Failed to save comment'
         format.html { redirect_to user_post_path(current_user, @post) }
       end
     end
