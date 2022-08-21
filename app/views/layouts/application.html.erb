@@ -11,11 +11,14 @@
   </head>
 
   <body>
-    <%= yield %>
+    <%= render 'shared/navbar' %>
     <span class="flash">
       <% flash.each do |key, value|%>
         <%= content_tag(:div,value,class:"alert alert-#{key}")%>
       <% end%>
+    </span>
+    <%= yield %>
+    <%# <%= render 'shared/footer' %> %>
     </span>
   </body>
 </html>
