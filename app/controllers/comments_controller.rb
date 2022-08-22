@@ -13,7 +13,7 @@ class CommentsController < ApplicationController
     respond_to do |format|
       if @comment.save
         format.html { redirect_to user_post_path(current_user, @post) }
-        flash[:success] = 'Comment created successfully'
+        flash[:success] = 'Thank you for your comment!'
       else
         flash[:error] = 'Failed to save comment'
         format.html { redirect_to user_post_path(current_user, @post) }
