@@ -36,6 +36,7 @@ gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
