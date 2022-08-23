@@ -20,6 +20,7 @@ class PostsController < ApplicationController
       flash[:success] = 'Post created successfully'
       redirect_to user_posts_path(current_user)
     else
+      flash.now[:error] = 'Failed to save post, try again!'
       render :new
     end
   end

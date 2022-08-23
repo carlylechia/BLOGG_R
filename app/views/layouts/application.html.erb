@@ -12,11 +12,12 @@
 
   <body>
     <%= render 'shared/navbar' %>
-    <span class="flash">
-      <% flash.each do |key, value|%>
-        <%= content_tag(:div,value,class:"alert alert-#{key}")%>
-      <% end%>
-    </span>
+    <div class="flash">
+      <% flash.each do |name, message| %>
+        <span class="<%= name %>"><%= message %></span>
+      <% end %>
+    </div>
+
     <%= yield %>
     <%= render 'shared/footer' %>
     </span>
