@@ -31,12 +31,20 @@ rspec
 rails s
 ```
 
-## Authors
+## Authors 1
 
 👤 **Chia Carlyle**
 - GitHub: [@carlylechia](https://github.com/carlylechia)
 - Twitter: [@chiacarlyle](https://twitter.com/chiacarlyle)
 - LinkedIn: [chia-carlyle](https://linkedin.com/in/chia-carlyle)
+
+## Authors 2
+
+👤 **Hammed Adisa**
+- GitHub: [@AbuRayhaan](https://github.com/aburayhaan)
+- Twitter: [@ayinla2011](https://twitter.com/ayinla2011)
+- LinkedIn: [Hammed-Adisa](https://linkedin.com/in/hammed-adisa)
+
 
 ## 🤝 Contributing
 

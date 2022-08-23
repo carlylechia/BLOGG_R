@@ -74,6 +74,9 @@ GEM
     bootsnap (1.13.0)
       msgpack (~> 1.2)
     builder (3.2.4)
+    bullet (7.0.3)
+      activesupport (>= 3.0.0)
+      uniform_notifier (~> 1.11)
     capybara (3.37.1)
       addressable
       matrix
@@ -86,6 +89,12 @@ GEM
     childprocess (4.1.0)
     concurrent-ruby (1.1.10)
     crass (1.0.6)
+    database_cleaner (2.0.1)
+      database_cleaner-active_record (~> 2.0.0)
+    database_cleaner-active_record (2.0.1)
+      activerecord (>= 5.a)
+      database_cleaner-core (~> 2.0.0)
+    database_cleaner-core (2.0.1)
     diff-lcs (1.5.0)
     digest (3.1.0)
     erubi (1.11.0)
@@ -94,6 +103,7 @@ GEM
       ruby2_keywords (>= 0.0.4)
     faraday-net_http (3.0.0)
     ffi (1.15.5)
+    ffi (1.15.5-x64-mingw-ucrt)
     font-awesome-sass (6.1.2)
       sassc (~> 2.0)
     globalid (1.0.0)
@@ -137,6 +147,8 @@ GEM
       net-protocol
       timeout
     nio4r (2.5.8)
+    nokogiri (1.13.8-x64-mingw-ucrt)
+      racc (~> 1.4)
     nokogiri (1.13.8-x86_64-darwin)
       racc (~> 1.4)
     oauth2 (1.4.10)
@@ -146,6 +158,7 @@ GEM
       multi_xml (~> 0.5)
       rack (>= 1.2, < 3)
     pg (1.4.3)
+    pg (1.4.3-x64-mingw-ucrt)
     public_suffix (4.0.7)
     puma (5.6.4)
       nio4r (~> 2.0)
@@ -246,6 +259,9 @@ GEM
     turbolinks-source (5.2.0)
     tzinfo (2.0.5)
       concurrent-ruby (~> 1.0)
+    tzinfo-data (1.2022.3)
+      tzinfo (>= 1.0.0)
+    uniform_notifier (1.16.0)
     unsplash (2.1.0)
       httparty (~> 0.16)
       oauth2 (~> 1)
@@ -272,11 +288,14 @@ GEM
     zeitwerk (2.6.0)
 
 PLATFORMS
+  x64-mingw-ucrt
   x86_64-darwin-21
 
 DEPENDENCIES
   bootsnap (>= 1.4.4)
+  bullet
   capybara (>= 3.26)
+  database_cleaner
   faker!
   font-awesome-sass (~> 6.1.2)
   image_processing (~> 1.2)

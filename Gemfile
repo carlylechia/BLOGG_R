@@ -36,6 +36,7 @@ gem 'image_processing', '~> 1.2'
 
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
+  gem 'database_cleaner'
   gem 'rails-controller-testing'
   gem 'rspec-rails'
 end
@@ -50,7 +51,7 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
 end
-
+gem 'bullet', group: 'development'
 group :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara', '>= 3.26'

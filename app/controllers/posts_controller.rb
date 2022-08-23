@@ -2,12 +2,12 @@ class PostsController < ApplicationController
   def index
     @user_id = params[:user_id]
     @user = User.find(@user_id)
-    @posts = @user.posts.includes(:comments)
+    @posts = @user.posts
   end
 
   def show
     @user = User.find(params[:user_id])
-    @post = @user.posts.includes(comments: [:user]).find(params[:id])
+    @post = @user.posts.find(params[:id])
   end
 
   def new
@@ -20,6 +20,7 @@ class PostsController < ApplicationController
       flash[:success] = 'Post created successfully'
       redirect_to user_posts_path(current_user)
     else
+      flash.now[:error] = 'Failed to save post, try again!'
       render :new
     end
   end
