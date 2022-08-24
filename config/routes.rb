@@ -2,6 +2,7 @@
 
 Rails.application.routes.draw do
   # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  devise_for :users
 
   root to: 'users#index'
   resources 'users', only: %w[index show] do
@@ -11,4 +12,8 @@ Rails.application.routes.draw do
     resources :comments
     resources :likes
   end
+    # # dev mailer
+    # if Rails.env.development?
+    #   mount LetterOpenerWeb::Engine, at: "/letter_opener"
+    # end
 end
