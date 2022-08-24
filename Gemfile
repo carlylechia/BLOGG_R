@@ -37,6 +37,9 @@ gem 'unsplash'
 gem 'font-awesome-sass', '~> 6.1.2'
 gem 'image_processing', '~> 1.2'
 
+# Set environmental variables with figaro
+gem 'figaro'
+
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
   gem 'database_cleaner'
