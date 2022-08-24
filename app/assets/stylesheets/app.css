@@ -41,6 +41,10 @@ header {
   margin-bottom: 20px;
 }
 
+header nav {
+  text-align: center;
+}
+
 header a {
   color: azure;
   text-decoration: none;
