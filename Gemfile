@@ -17,6 +17,9 @@ gem 'webpacker', '~> 5.0'
 gem 'turbolinks', '~> 5'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.7'
+
+gem 'devise'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 4.0'
 # Use Active Model has_secure_password
@@ -34,6 +37,9 @@ gem 'unsplash'
 gem 'font-awesome-sass', '~> 6.1.2'
 gem 'image_processing', '~> 1.2'
 
+# Set environmental variables with figaro
+gem 'figaro'
+
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
   gem 'database_cleaner'
@@ -49,6 +55,7 @@ group :development do
   gem 'listen', '~> 3.3'
   gem 'rack-mini-profiler', '~> 2.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
+  gem 'letter_opener_web'
   gem 'spring'
 end
 gem 'bullet', group: 'development'

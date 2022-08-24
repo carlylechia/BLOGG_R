@@ -1,5 +1,6 @@
 class Post < ApplicationRecord
   # after_save :update_post_counter
+  after_initialize :init
 
   validates_presence_of :title, :text
   validates :title, length: { maximum: 250 }
@@ -18,5 +19,11 @@ class Post < ApplicationRecord
 
   def update_post_counter
     user.increment!(:posts_count)
+  end
+
+  def init
+    self.comments_count ||= 0
+    self.likes_count ||= 0
+    true
   end
 end

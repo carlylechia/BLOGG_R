@@ -1,4 +1,6 @@
 class LikesController < ApplicationController
+  before_action :authenticate_user!
+
   def new
     like = Like.new
     respond_to do |format|
@@ -12,7 +14,7 @@ class LikesController < ApplicationController
     @like.user_id = current_user.id
     respond_to do |format|
       format.html { redirect_to user_post_path(current_user, @post) }
-      flash[:success] = 'Like created successfully' if @like.save
+      flash[:success] = 'Like added!' if @like.save
     end
   end
 end
