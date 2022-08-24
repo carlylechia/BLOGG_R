@@ -1,0 +1,40 @@
+.devise_form {
+  display: flex;
+  flex-direction: column;
+  margin: 3rem 40%;
+}
+
+.devise_form h2 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.field input {
+  width: 100%;
+  border: 0.7px solid #ccc;
+  margin-bottom: 15px;
+  padding: 10px 0;
+}
+
+.checkbox {
+  display: flex;
+  gap: 2rem;
+  margin-bottom: 10px;
+}
+
+.field input:focus {
+  outline: none;
+  border: 0.7px solid salmon;
+}
+
+.actions input[type="submit"] {
+  background-color: rgb(46, 46, 150);
+  width: 100%;
+  color: white;
+  border: none;
+  padding: 10px;
+  font-size: 1.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
