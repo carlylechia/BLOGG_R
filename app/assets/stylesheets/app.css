@@ -43,6 +43,7 @@ header {
 
 header nav {
   text-align: center;
+  padding: 1rem;
 }
 
 header a {
