@@ -4,9 +4,9 @@
     <% else %>
         <% post.comments.includes([:user]).each do |comment| %>
             <p>~><span><%= comment.user.name %></span>: <%= comment.text %> </p>
-            <%# <%if can? :manage, comment%> %>
+            <%if can? :manage, comment%>
                 <%=button_to "delete", post_comment_path(post.id, comment.id), method: :delete,  data: {confirm: 'Are You Sure You Want to Delete This Comment?'}, class: 'log_out'%>
-            <%# <% end %> %>
+            <% end %>
         <% end %>
     <% end %>
 </div>
