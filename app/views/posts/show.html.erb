@@ -5,6 +5,9 @@
       <h3>         
         <%= @post.title %>
         <span> by <%= @post.user.name %></span>
+          <%if can? :manage, @post%>
+            <%=button_to "delete", post_path, method: :delete,  data: {confirm: 'Are You Sure You Want to Delete This Post?'}, class: 'log_out'%>
+          <% end %>
       </h3>
     
       <div class="numbers">

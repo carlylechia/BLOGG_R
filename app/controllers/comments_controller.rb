@@ -1,5 +1,6 @@
 class CommentsController < ApplicationController
   before_action :authenticate_user!
+  load_and_authorize_resource
 
   def new
     comment = Comment.new
@@ -20,6 +21,16 @@ class CommentsController < ApplicationController
         flash[:error] = 'Failed to save comment'
         format.html { redirect_to user_post_path(current_user, @post) }
       end
+    end
+  end
+
+  def destroy
+    @comment = Comment.find(params[:id])
+    @comment.destroy
+    respond_to do |format|
+      format.js { render :index }
+      format.html { redirect_to user_post_path(current_user, @comment.post) }
+      flash[:success] = 'Comment deleted successfully'
     end
   end
 

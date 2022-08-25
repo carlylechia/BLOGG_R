@@ -78,6 +78,7 @@ GEM
     bullet (7.0.3)
       activesupport (>= 3.0.0)
       uniform_notifier (~> 1.11)
+    cancancan (3.4.0)
     capybara (3.37.1)
       addressable
       matrix
@@ -318,6 +319,7 @@ PLATFORMS
 DEPENDENCIES
   bootsnap (>= 1.4.4)
   bullet
+  cancancan
   capybara (>= 3.26)
   database_cleaner
   devise

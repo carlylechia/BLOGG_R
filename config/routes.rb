@@ -7,9 +7,9 @@ Rails.application.routes.draw do
   devise_for :users
 
   resources 'users', only: %w[index show] do
-    resources 'posts', only: %w[index show new create]
+    resources 'posts', only: %w[index show new]
   end
-  resources :posts, only: [:new, :create] do
+  resources :posts, only: [:new, :create, :destroy] do
     resources :comments
     resources :likes
   end

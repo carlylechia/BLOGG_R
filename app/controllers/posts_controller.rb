@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+  load_and_authorize_resource
   before_action :set_user, only: %i[index show]
   before_action :authenticate_user!, only: %i[new create]
 
@@ -23,6 +24,13 @@ class PostsController < ApplicationController
       flash.now[:error] = 'Failed to save post, try again!'
       render :new
     end
+  end
+
+  def destroy
+    @post = Post.find(params[:id])
+    @post.destroy
+    redirect_to user_posts_path(current_user)
+    flash[:success] = 'Post deleted successfully'
   end
 
   private
