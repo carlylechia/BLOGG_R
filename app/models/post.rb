@@ -8,8 +8,8 @@ class Post < ApplicationRecord
   validates :likes_count, numericality: { only_integer: true, greater_than_or_equal_to: 0 }, allow_blank: true
 
   belongs_to :user, counter_cache: true
-  has_many :comments
-  has_many :likes
+  has_many :comments, dependent: :destroy
+  has_many :likes, dependent: :destroy
 
   def last_five_comments
     comments.limit(5).order(created_at: :desc).includes([:user])
