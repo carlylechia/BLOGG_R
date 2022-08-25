@@ -1,8 +1,8 @@
 class Comment < ApplicationRecord
   # after_save :update_comments_counter
 
-  belongs_to :user, counter_cache: true
-  belongs_to :post, counter_cache: true
+  belongs_to :user, counter_cache: true, default: 0
+  belongs_to :post, counter_cache: true, default: 0
 
   private
 

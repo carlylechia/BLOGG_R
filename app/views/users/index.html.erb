@@ -3,7 +3,7 @@
     <% @users.each do |user| %>
         <div class="user_info">
             <div class="img">
-              <%= image_tag user.photo, size: "160x90", alt: "Edit Entry" if user.photo%>
+              <%= image_tag user.photo, size: "90x70", alt: "Edit Entry" if user.photo%>
             </div>
             <div class="contents">
                 <h3><%= link_to user.name, user %></h3>
