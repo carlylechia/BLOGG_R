@@ -16,7 +16,7 @@ Devise.setup do |config|
   # by default. You can change it below and use your own secret key.
   # config.secret_key = '98a8b9e65c89a11e91730a9de0bc649aba68b2df027951288ccb70470dbe7b760eeec5c205eee4209c89df4e38e3eaf17ff6f90f1e8f0e07e844007f6af65ecc'
   config.jwt do |jwt|
-    jwt.secret = Rails.application.credentials.devise[:jwt_secret_key]
+    jwt.secret = ENV['JWT_SECRET']
     jwt.revocation_requests = [
       ['DELETE', %r{^/sign_out$}]
     ]

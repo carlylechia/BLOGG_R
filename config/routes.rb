@@ -6,10 +6,10 @@ Rails.application.routes.draw do
 
   # devise
   devise_for :users,
-  # controllers: {
-  #     sessions: 'users/sessions',
-  #     registrations: 'users/registrations'
-  # }
+    controllers: {
+      sessions: 'users/sessions',
+      registrations: 'users/registrations'
+    }
 
   resources 'users', only: %w[index show] do
     resources 'posts', only: %w[index show new]
