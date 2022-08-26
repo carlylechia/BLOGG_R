@@ -5,6 +5,11 @@ Rails.application.routes.draw do
   namespace :api, :defaults => {:format => :json} do
     resources :users do
       resources :posts
+    end
+    resources :posts, only: [:new, :create, :destroy] do
+      resources :comments
+      resources :likes
+    end
   end
 
   root 'users#index'
@@ -18,6 +23,4 @@ Rails.application.routes.draw do
     resources :comments
     resources :likes
   end
-
-end
 end
