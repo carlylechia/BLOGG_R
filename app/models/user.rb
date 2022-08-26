@@ -18,4 +18,8 @@ class User < ApplicationRecord
   def init
     self.posts_count ||= 0
   end
+
+  def as_json(_options = {})
+    super(only: %i[id name bio posts_count admin])
+  end
 end
