@@ -1,7 +1,7 @@
 class API::PostsController < ApplicationController
-  # load_and_authorize_resource
+  load_and_authorize_resource
   before_action :set_user, only: %i[index show]
-  # before_action :authenticate_user!, only: %i[new create]
+  before_action :authenticate_user!, only: %i[new create]
 
   def index
     render json: @user.posts.includes(comments: [:user])
