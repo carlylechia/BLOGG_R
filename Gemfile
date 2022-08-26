@@ -46,6 +46,9 @@ gem 'image_processing', '~> 1.2'
 # Set environmental variables with figaro
 gem 'figaro'
 
+# dotenv
+gem 'dotenv-rails', groups: [:development, :test]
+
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
   gem 'database_cleaner'
