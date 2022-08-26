@@ -20,6 +20,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Use devise for authentication
 gem 'devise'
+gem 'devise-jwt', '~> 0.9.0'
+gem 'rack-cors'
 
 # Use cancancan for authorizationn
 gem 'cancancan'
