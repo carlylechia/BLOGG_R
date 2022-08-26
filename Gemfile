@@ -47,7 +47,7 @@ gem 'image_processing', '~> 1.2'
 gem 'figaro'
 
 # dotenv
-gem 'dotenv-rails', groups: [:development, :test]
+gem 'dotenv-rails', groups: %i[development test]
 
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console
