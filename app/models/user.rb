@@ -3,7 +3,8 @@ class User < ApplicationRecord
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
-         :recoverable, :rememberable, :validatable, :confirmable
+         :recoverable, :rememberable, :validatable, :confirmable,
+         :jwt_authenticatable, jwt_revocation_strategy: JwtDenylist
   validates :name, presence: true
   validates :posts_count, numericality: { only_integer: true, greater_than_or_equal_to: 0 }
 
@@ -17,5 +18,9 @@ class User < ApplicationRecord
 
   def init
     self.posts_count ||= 0
+  end
+
+  def as_json(_options = {})
+    super(only: %i[id name bio posts_count admin])
   end
 end

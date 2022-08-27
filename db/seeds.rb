@@ -24,10 +24,10 @@
 #     'https://images.unsplash.com/photo-1660536754523-13d686a48178?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=857&q=80'
 # ]
 
-# # --- Create Users ---
-# first_user = User.create(name: 'Tom', photo: images[0], bio: 'Teacher from Mexico.')
-# second_user = User.create(name: 'Lilly', photo: images[1], bio: 'Teacher from Poland.')
-# third_user = User.create(name: 'Path', photo: images[2], bio: 'Teacher from France.')
+# --- Create Users ---
+# first_user = User.create(name: 'Tom', photo: images[0], bio: 'Teacher from Mexico.', email: 'tom@dev.com', posts_count: 0)
+# second_user = User.create(name: 'Lilly', photo: images[1], bio: 'Teacher from Poland.', email: 'lilly@prof.com', posts_count: 0)
+# third_user = User.create(name: 'Path', photo: images[2], bio: 'Teacher from France.', email: 'path@prof.com', posts_count: 0)
 
 
 # # --- Create Posts ---

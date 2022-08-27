@@ -20,6 +20,8 @@ gem 'jbuilder', '~> 2.7'
 
 # Use devise for authentication
 gem 'devise'
+gem 'devise-jwt', '~> 0.9.0'
+gem 'rack-cors'
 
 # Use cancancan for authorizationn
 gem 'cancancan'
@@ -43,6 +45,9 @@ gem 'image_processing', '~> 1.2'
 
 # Set environmental variables with figaro
 gem 'figaro'
+
+# dotenv
+gem 'dotenv-rails', groups: %i[development test]
 
 group :development, :test do
   # Call 'Rspec' anywhere in the code to stop execution and get a debugger console

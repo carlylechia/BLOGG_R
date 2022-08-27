@@ -112,3 +112,8 @@ h1 {
 .user_details button a {
   color: aliceblue;
 }
+
+.form .delete {
+  background: crimson;
+  color: beige;
+}

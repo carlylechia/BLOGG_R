@@ -6,7 +6,7 @@
         <%= @post.title %>
         <span> by <%= @post.user.name %></span>
           <%if can? :manage, @post%>
-            <%=button_to "delete", post_path, method: :delete,  data: {confirm: 'Are You Sure You Want to Delete This Post?'}, class: 'log_out'%>
+            <%=button_to "delete post", post_path, method: :delete,  data: {confirm: 'Are You Sure You Want to Delete This Post?'}, form_class: 'form', class: 'delete'%>
           <% end %>
       </h3>
     

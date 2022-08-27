@@ -34,9 +34,14 @@ rails s
 ## Authors
 
 👤 **Chia Carlyle**
-- GitHub: [@carlylechia](https://github.com/carlylechia)
-- Twitter: [@chiacarlyle](https://twitter.com/chiacarlyle)
-- LinkedIn: [chia-carlyle](https://linkedin.com/in/chia-carlyle)
+- LinkedIn: [![LinkedIn Badge](https://img.shields.io/badge/-chiacarlyle-black?logo=LinkedIn&logoColor=0A66C2&style=plastic)](https://linkedin.com/in/chia-carlyle)
+
+- GitHub: [![GitHub Badge](https://img.shields.io/badge/-carlylechia-black?logo=GitHub&logoColor=18171&style=plastic)](https://github.com/carlylechia)
+
+- Twitter: [![Twitter Badge](https://img.shields.io/badge/-chiacarlyle-black?logo=Twitter&logoColor=1DA1F2&style=plastic)](https://twitter.com/chiacarlyle)
+
+- Gmail: [![Gmail Badge](https://img.shields.io/badge/-chiacarlyle-black?logo=Gmail&logoColor=EA4335&style=plastic)](mailto:chiacarlyle@gmail.com)
+
 
 👤 **Hammed Adisa**
 - GitHub: [@AbuRayhaan](https://github.com/aburayhaan)
