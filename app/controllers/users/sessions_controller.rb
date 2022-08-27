@@ -1,6 +1,7 @@
 class Users::SessionsController < Devise::SessionsController
   respond_to :html, :json
 
+
   private
 
   def respond_with(_resource, _opts = {})
